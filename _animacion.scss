@@ -1,0 +1,44 @@
+/* animacion */
+.ultDisp{
+    animation-duration: 3s;
+    animation-name: slideIn;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    color: red;
+    transition: 1s ease-in;
+    cursor: pointer;
+}
+@keyframes slideIn {
+from {
+    margin-left:50%;
+    width: 110%
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+.ultDisp:hover{
+color: rgb(96, 7, 7);
+}
+.checkColor{
+color:tomato;
+}
+#boton{
+margin: 1rem;
+}
+.btnHov{
+justify-self: center;
+transition: background 1s ease-in;
+}
+.btnHov:hover{
+background: #0000   ;
+}
+.tranf{
+transition: all 2s ease-in-out;
+margin: 1rem;
+}
+.tranf:hover{
+transform: translatex(1rem);
+}

@@ -1,0 +1,283 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, #030742), color-stop(50%, black), color-stop(98%, #030742));
+  background: linear-gradient(90deg, #030742 2%, black 50%, #030742 98%);
+}
+
+/* animacion */
+.ultDisp {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: red;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+  cursor: pointer;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    margin-left: 50%;
+    width: 110%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: 50%;
+    width: 110%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.ultDisp:hover {
+  color: #600707;
+}
+
+.checkColor {
+  color: tomato;
+}
+
+#boton {
+  margin: 1rem;
+}
+
+.btnHov {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transition: background 1s ease-in;
+  transition: background 1s ease-in;
+}
+
+.btnHov:hover {
+  background: #0000;
+}
+
+.tranf {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  margin: 1rem;
+}
+
+.tranf:hover {
+  -webkit-transform: translatex(1rem);
+          transform: translatex(1rem);
+}
+
+#nav1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, black), color-stop(50%, #0d18aa), color-stop(98%, black));
+  background: linear-gradient(90deg, black 2%, #0d18aa 50%, black 98%);
+  border-bottom: 2px solid #000;
+}
+
+#demo {
+  padding-top: 1rem;
+  width: 100vw;
+  cursor: pointer;
+}
+
+.carousel-item {
+  height: 266.44px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul a::first-letter {
+  color: white;
+  font-size: 1rem;
+}
+
+#navColor:active {
+  color: #030742;
+}
+
+.text-center {
+  color: whitesmoke;
+  padding-top: 1rem;
+}
+
+#scaY {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+#scaY:hover {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
+#imgRoja {
+  padding-top: 2.5rem;
+}
+
+#carta {
+  width: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.card-img-top {
+  width: 10rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+#snp {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h4 {
+  font-size: 1rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.subCrece:hover {
+  font-size: 1.5rem;
+  color: #0d18aa;
+}
+
+.btnComprar {
+  background-color: #030742;
+}
+
+.btn-success {
+  -webkit-transition: background 2s ease-in;
+  transition: background 2s ease-in;
+}
+
+.btn-success:hover {
+  background: #331bd3;
+}
+
+.btnHov {
+  background-color: #030742;
+}
+
+.pp {
+  color: white;
+  margin: 1rem;
+}
+
+.imgMarc {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.divRed {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.redess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.red--wsp {
+  background: #25D366;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.red--youtube {
+  background: #a32424;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.red--linkedin {
+  background: #0e76a8;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li a {
+  font-size: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel-indicators, .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none;
+  }
+  .mobp {
+    margin: 1.5rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

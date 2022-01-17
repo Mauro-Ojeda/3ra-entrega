@@ -1,0 +1,121 @@
+//  VARIABLES
+$un:1rem;
+$azulFuerte:rgba(3,7,66,1);
+$azul:#0d18aa;
+$negrosuave:rgba(0,0,0,1);
+$bl:white;
+$rojo:rgb(96, 7, 7);
+$red2:#ce1312;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(90deg, $azulFuerte 2%, $negrosuave 50%, $azulFuerte 98%);
+}
+@import "animacion";
+@import "navCarousel";
+@mixin cards{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+}
+// Cards
+#imgRoja{
+    padding-top: 2.5rem;
+}
+#carta{
+    width: 250px;
+    justify-content: center;
+    margin: $un;
+}
+.card-img-top{
+    width:10rem;
+    align-self:center ;
+    cursor: pointer;
+}
+#snp{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+h4{
+    font-size: $un;
+    transition: all .5s ease ;
+    cursor: pointer;
+}
+.subCrece:hover{
+    font-size: 1.5rem;
+    color: #0d18aa;
+}
+.btnComprar {
+    background-color: $azulFuerte;
+}
+.btn-success{
+    transition: background 2s ease-in;
+}
+.btn-success:hover{
+    background:#331bd3 ;
+}
+.btnHov{
+    background-color: $azulFuerte;
+}
+.pp{
+    color:white ;
+    margin: $un;
+}
+.imgMarc{
+    @include cards
+}
+.divRed{
+    @include cards;
+}
+.redess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+$redes:(
+    wsp:#25D366,
+    youtube: #a32424,
+    linkedin:#0e76a8,
+);
+@each $red, $color in $redes {
+    .red--#{$red} {
+        background: $color;
+        @include cards()
+    }
+}
+// footer
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: $un;
+    list-style: none;
+    ul li{
+        display: inline-block;
+        padding-top: $un;
+        align-items: center;
+        a{
+            font-size: $un;
+            justify-content: space-between;
+            display: inline-block;
+        }
+    }
+}
+@media only screen and (max-width:480px){
+    .carousel-indicators, .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    .mobp{
+        margin: 1.5rem;
+    }
+}
