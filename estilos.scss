@@ -19,6 +19,10 @@ html{
 body{
     background: linear-gradient(90deg, $azulFuerte 2%, $negrosuave 50%, $azulFuerte 98%);
 }
+.row{
+    margin-left: 0rem;
+    margin-right: 0rem ;
+}
 @import "animacion";
 @import "navCarousel";
 @mixin cards{
@@ -68,6 +72,7 @@ h4{
 }
 .pp{
     color:white ;
+    padding: $un;
     margin: $un;
 }
 .imgMarc{
